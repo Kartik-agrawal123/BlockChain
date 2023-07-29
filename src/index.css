@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body{
-  background: url('E:\learnReact\blockchain\public\images\mainbg.png');
+  background: url('/public/images/mainbg.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -16,7 +16,7 @@ body{
   width: 100%;
   height: 100px;
   /* background-color: blue; */
-  /* background: url('E:\learnReact\blockchain\public\images\navstyleimg.png'); */
+  background: url('/public/images/navstyleimg.png');
   background-size: cover;
   display: flex;
   align-items: center;

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 const Navbar1 = () => {
-  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <>
     
