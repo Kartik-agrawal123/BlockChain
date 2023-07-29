@@ -7,7 +7,7 @@ const Navbar1 = () => {
     
     
 
-<nav class="bg-[url('E:\learnReact\my-project\public\images\navstyleimg.png')] bg-cover">
+<nav class="bg-[url('/public/images/navstyleimg.png')] bg-cover">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="https://flowbite.com/" class="flex items-center">
         
