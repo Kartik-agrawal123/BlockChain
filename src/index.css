@@ -1,13 +1,434 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url('E:\learnReact\blockchain\public\images\mainbg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.navbar{
+  width: 100%;
+  height: 100px;
+  /* background-color: blue; */
+  /* background: url('E:\learnReact\blockchain\public\images\navstyleimg.png'); */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+ul{
+  display: flex;
+  margin: auto 20px;
+  margin-right: 150px;
+}
+ul li{
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+.page{
+  width: 100%;
+  height: 550px;
+  /* background-color: red; */
+  display: flex;
+}
+.aside{
+  width: 140px;
+  height: 550px;
+  color: white;
+  /* background-color: green; */
+}
+.aside p{
+  margin: 0px 20px;
+  margin-top: 20px;
+  line-height: 100%;
+}
+.aside img{
+  width: 30px;
+  height: 30px;
+  margin: 0px 50px;
+}
+.Bheading{
+  width: 600px;
+  height: 550px;
+  /* background-color: darkblue; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.fa-facebook{
+  position: relative;
+  right: 80px;
+  font-size: 1.6rem;
+  width: 200px;
+  height: 00px;
+  color: white;
+}
+.fa-instagram{
+  position: relative;
+  top: 50px;
+  right: 103px;
+  font-size: 1.6rem;
+  width: 200px;
+  height: 00px;
+  color: white;
+}
+.fa-twitter{
+  position: relative;
+  top: 100px;
+  right: 129px;
+  font-size: 1.6rem;
+  width: 200px;
+  height: 00px;
+  color: white;
+}
+.vertical{
+  position: relative;
+  top: 250px;
+  right: 140px;
+  border: 1.5px solid white;
+  height: 170px;
+}
+.head p{
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: white;
+  width: 600px;
+  /* background-color: brown; */
+  text-shadow: 3px 3px 40px white;
+}
+.explore img{
+  margin-top: 50px;
+  margin-left:50px;
+  cursor: pointer;
+}
+.hbd{
+  top: 110px;
+  right: 40px;
+  position: relative;
+  z-index: 1;
+}
+.bitcoin{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: 100px;
+  top: 200px;
+  z-index: 2;
+}
+.person{
+  width: 100%;
+  height: 200px;
+  /* background-color: brown; */
+}
+.person img{
+  position: relative;
+  z-index: 1;
+}
+.mix{
+  width: 100%;
+  height: 100%;
+  /* background-color: blueviolet; */
+}
+.dot{
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  z-index: 2;
+  top: 125%;
+  right: 0;
+}
+.trusted{
+  margin: 0px auto;
+  width: 80%;
+  height: 150px;
+  /* background-color: lawngreen; */
+}
+.trusted img{
+  top: -30px;
+  z-index: 3;
+  position: relative;
+}
+.mainContent{
+  margin: 10px auto;
+  width: 98%;
+  height: 530px;
+  /* background-color: darkolivegreen; */
+  display: flex;
+  /* background: url('E:\learnReact\my-project\public\images\blur-circle.png');
+  background-position: 80%; */
+}
+.investment{
+  margin: 10px 10px;
+  width: 60%;
+  height: 510px;
+  /* background-color: pink; */
+}
+.investment h1{
+  margin: 0px 10px;
+  margin-top: 60px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  z-index: 5;
+}
+.investment p{
+  margin: 10px 10px;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+}
+.blocComp{
+  margin: 10px 10px;
+  width: 35%;
+  height: 510px;
+  /* background-color: darkcyan; */
+}
+.blocComp img{
+  margin: 50px 0px;
+  width: 300px;
+  height: 450px;
+}
+.hd{
+  position: relative;
+  margin-left: 90px;
+  margin-top: -450px;
+  /* margin-right: -200px; */
+  width: 400px;
+  height: 400px;
+  /* background-color: red; */
+}
+.hd h1{
+  margin-left: 15px;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+}
+.hd p{
+  font-size: 1.5rem;
+  margin-left: 15px;
+  color: white;
+}
+.twoh{
+  margin-top: 60px;
+}
+.issues{
+  margin-left: 15px;
+}
+.threeh{
+  margin-top: 70px;
+}
+.mainContent1{
+  margin: 10px auto;
+  width: 98%;
+  height: 530px;
+  /* background-color: darkolivegreen; */
+  display: flex;
+  background-position: 80%;
+}
+.investment1{
+  margin: 10px 10px;
+  width: 35%;
+  height: 510px;
+  /* background-color: pink; */
+}
+.neon1{
+  margin: 0px 150px;
+  margin-bottom: 100px;
+  width: 800px;
+  height: 300px;
+}
+.blocComp1{
+  margin: 10px 80px;
+  width: 50%;
+  height: 510px;
+  /* background-color: darkcyan; */
+}
+.blocComp1 h3{
+  margin: 0px 110px;
+  color: darkorchid;
+  font-size: 2rem;
+  /* font-weight: bold; */
+}
+.blocComp1 h1{
+  margin: 0px 110px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.blocComp1 p{
+  margin: 0px 110px;
+  color: grey;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.mainContent2{
+  margin: 10px auto;
+  width: 98%;
+  height: 530px;
+  /* background-color: darkolivegreen; */
+  display: flex;
+}
+.investment2{
+  margin: 10px 10px;
+  width: 60%;
+  height: 510px;
+  /* background-color: pink; */
+}
+.investment2 h3{
+  margin: 0px 100px;
+  margin-top: 50px;
+  color: rgb(99, 100, 11);
+  font-size: 2rem;
+  /* font-weight: bold; */
+}
+.investment2 h1{
+  margin: 0px 100px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.investment2 p{
+  margin: 0px 100px;
+  color: grey;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.blocComp2{
+  margin: 10px 10px;
+  width: 35%;
+  height: 510px;
+  /* background-color: darkcyan; */
+}
+.mainContent3{
+  margin: 10px auto;
+  width: 98%;
+  height: 1000px;
+  /* background-color: darkolivegreen; */
+  display: flex;
+}
+.investment3{
+  margin: 10px 10px;
+  width: 60%;
+  height: 880px;
+  /* background-color: pink; */
+}
+.investment3 img{
+  margin: 50px 100px;
+  width: 400px;
+  height: 400px;
+}
+.blocComp3{
+  margin: 0px 10px;
+  width: 50%;
+  height: 880px;
+  /* background-color: darkcyan; */
+}
+.blocComp3 h3{
+  margin: 0px 50px;
+  margin-top: 50px;
+  color: green;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.blocComp3 h1{
+  margin: 0px 50px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.blocComp3 p{
+  margin: 0px 50px;
+  color: grey;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.dot-slider {
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider-item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 1px solid #ccc;
+}
+.slider-item.active {
+  background-color: #ccc;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #555;
+}
+.coin{
+  width: 80%;
+  margin:  20px auto;
+  height: 80px;
+  background : linear-gradient(to right,#05104B,#012F74);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.coin img{
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+.head{
+  color: white;
+  font-size: 1.2rem;
+  text-align: start;
+  margin-left: 10px;
+}
+.value{
+  margin-left: auto;
+  /* background-color: green; */
+  position: relative;
+  /* left: 60%; */
+}
+.value p{
+  margin-right: 10px;
+  color: white;
+}
+.symbol{
+  margin-left: 100px;
 }
